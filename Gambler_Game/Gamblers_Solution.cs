@@ -24,7 +24,7 @@ namespace Gambler_Game
             
 
             //condition to check person winning or loss
-            while (win != 150 || loss != 50)
+            while (win != 150 && loss != 50)
             {
                
                     int toss = random.Next(0, 2);
