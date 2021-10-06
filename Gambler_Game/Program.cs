@@ -19,8 +19,8 @@ namespace Gambler_Game
                 switch (choice)  //switch case
                 {
                     case 1:
-                        Gamblers_Solution game = new Gamblers_Solution();
-                        game.start();
+                        Gamblers_Solution game = new Gamblers_Solution();//creating object
+                        game.start(); //calling start method
                         break;
                              
                     default:
