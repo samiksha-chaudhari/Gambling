@@ -14,8 +14,24 @@ namespace Gambler_Game
             //variable declaration
             int money = 100; //total money
             int bet = 1; //bet 1 every day
-            Console.WriteLine("Total money is :" +money);
+            int win = 0;
+            int loss = 0;
+            Console.WriteLine("Total money :" +money);
+            Random random = new Random();
             
+            int toss = random.Next(0, 2);
+            
+            if (toss == 0)
+            {
+                win += 1;
+                Console.WriteLine($"Total money after winnig is :{money + win} ");
+            }
+            else if (toss == 1)
+            {
+                loss -= 1;
+                Console.WriteLine($"Total money after winnig is :{money + loss} ");
+            }
+
         }
     }
 }
