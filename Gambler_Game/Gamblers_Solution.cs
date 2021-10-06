@@ -6,8 +6,7 @@ namespace Gambler_Game
 {
     class Gamblers_Solution
     {
-
-        //instance variable declaration
+        //variable declaration
         int money = 100; //total money
         int bet = 1; //bet 1 every day
 
@@ -34,7 +33,7 @@ namespace Gambler_Game
             else if (toss == 1)
             {
                 loss -= bet;
-                Console.WriteLine($"Total money after winnig is :{money + loss} ");
+                Console.WriteLine($"Total money after lossing is :{money + loss} ");
             }
 
         }
