@@ -21,21 +21,24 @@ namespace Gambler_Game
             
             //cheating random variable
             Random random = new Random();
-            
-            int toss = random.Next(0, 2);
-            
-            //condition to check person winning or loss
-            if (toss == 0)
-            {
-                win += bet;
-                Console.WriteLine($"Total money after winnig is :{money + win} ");
-            }
-            else if (toss == 1)
-            {
-                loss -= bet;
-                Console.WriteLine($"Total money after lossing is :{money + loss} ");
-            }
 
+            //condition to check person winning or loss
+            while (win ==150 ||loss ==50)
+            {
+                int toss = random.Next(0, 2);
+                if (toss == 0)
+                {
+                    win += bet;
+                   Console.WriteLine($"Total money after winnig is :{money + win} ");
+                }
+                else if (toss == 1)
+                {
+                    loss -= bet;
+                    Console.WriteLine($"Total money after lossing is :{money + loss} ");
+                }
+                Console.WriteLine("Remaing money" + money);
+            }
+            
         }
     }
 }
