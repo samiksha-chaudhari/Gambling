@@ -6,14 +6,16 @@ namespace Gambler_Game
 {
     class Gamblers_Solution
     {
+
+        //instance variable declaration
+        int money = 100; //total money
+        int bet = 1; //bet 1 every day
+
         /// <summary>
         /// method to start beating
         /// </summary>
         public void start()
         {
-            //variable declaration
-            int money = 100; //total money
-            int bet = 1; //bet 1 every day
             int win = 0;
             int loss = 0;
             Console.WriteLine("Total money :" +money);
