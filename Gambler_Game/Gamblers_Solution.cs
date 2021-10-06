@@ -17,18 +17,21 @@ namespace Gambler_Game
             int win = 0;
             int loss = 0;
             Console.WriteLine("Total money :" +money);
+            
+            //cheating random variable
             Random random = new Random();
             
             int toss = random.Next(0, 2);
             
+            //condition to check person winning or loss
             if (toss == 0)
             {
-                win += 1;
+                win += bet;
                 Console.WriteLine($"Total money after winnig is :{money + win} ");
             }
             else if (toss == 1)
             {
-                loss -= 1;
+                loss -= bet;
                 Console.WriteLine($"Total money after winnig is :{money + loss} ");
             }
 
